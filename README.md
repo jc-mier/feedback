@@ -110,4 +110,4 @@ Replace copy fc.yml file to frappe_docker folder then execute
 
 Wait for 5 minutes for ERPNext site to be created or check create-site container logs before opening browser on port 8080. (username: Administrator, password: admin)
 
-If you ran in a Dev Docker environment, to view container logs: docker compose -f pwd.yml logs -f create-site. Don't worry about some of the initial error messages, some services take a while to become ready, and then they go away.
+If you ran in a Dev Docker environment, to view container logs: docker compose -f fc.yml logs -f create-site. Don't worry about some of the initial error messages, some services take a while to become ready, and then they go away.
