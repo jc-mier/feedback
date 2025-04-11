@@ -101,3 +101,6 @@ docker build \
   --file=images/custom/Containerfile .
 ```
 
+Replace copy fc.yml file to frappe_docker folder then execute
+
+`docker compose -f fc.yml up -d`
