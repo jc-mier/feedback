@@ -27,7 +27,7 @@ Create the following `apps.json` file:
 
 Note:
 
-- The `url` needs to be http(s) git url with personal access tokens without username eg:- `http://{{PAT}}@github.com/project/repository.git` (`https://ght***************@git.example.com/project/repository.git`) in case of private repo.
+- The `url` needs to be http(s) git url with personal access tokens without username eg:- public repo `http://{{PAT}}@github.com/project/repository.git` for private repo(`https://ght***************@git.example.com/project/repository.git`) in case of private repo.
 - Add dependencies manually in `apps.json` e.g. add `erpnext` if you are installing `hrms`.
 - Use fork repo or branch for ERPNext in case you need to use your fork or test a PR.
 
