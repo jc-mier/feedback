@@ -38,6 +38,9 @@ export APPS_JSON_BASE64=$(base64 -w 0 /path/to/apps.json)
 ```
 
 In windows 11: 
+- create frappe folder
+- then enter `wsl`
+  
 ```shell
 mkdir frappe 
 cd frappe
