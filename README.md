@@ -19,7 +19,7 @@ Create the following `apps.json` file:
     "branch": "version-15"
   },
   {
-    "url": "http://{{PAT}}@github.com/project/repository.git",
+    "url": "https://github.com/jc-mier/feedback.git",
     "branch": "main"
   }
 ]
