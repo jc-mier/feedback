@@ -33,7 +33,7 @@ Note:
 
 In windows 11: 
 - create frappe folder
-- then enter `wsl` to enter linux file system to generate (APPS_JSON_BASE64)
+- then enter `wsl` to enter linux file system to base64 string from json file
   
 ```shell
 mkdir frappe 
