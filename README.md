@@ -31,15 +31,9 @@ Note:
 - Add dependencies manually in `apps.json` e.g. add `erpnext` if you are installing `hrms`.
 - Use fork repo or branch for ERPNext in case you need to use your fork or test a PR.
 
-Generate base64 string from json file:
-
-```shell
-export APPS_JSON_BASE64=$(base64 -w 0 /path/to/apps.json)
-```
-
 In windows 11: 
 - create frappe folder
-- then enter `wsl`
+- then enter `wsl` to enter linux file system to generate (APPS_JSON_BASE64)
   
 ```shell
 mkdir frappe 
@@ -47,6 +41,13 @@ cd frappe
 
 wsl
 ```
+
+In linux/unix Generate base64 string from json file:
+
+```shell
+export APPS_JSON_BASE64=$(base64 -w 0 /path/to/apps.json)
+```
+
 
 Test the Previous Step: Decode the Base64-encoded Environment Variable
 
@@ -82,20 +83,6 @@ Notes
 - Make sure the `--tag` is valid image name that will be pushed to registry. See section [below](#use-images) for remarks about its use.
 - `.git` directories for all apps are removed from the image.
 
-### Quick build image
-
-This method uses pre-built `frappe/base:${FRAPPE_BRANCH}` and `frappe/build:${FRAPPE_BRANCH}` image layers which come with required Python and NodeJS runtime. It speeds up the build time.
-
-It uses `images/layered/Containerfile`.
-
-```shell
-docker build \
-  --build-arg=FRAPPE_PATH=https://github.com/frappe/frappe \
-  --build-arg=FRAPPE_BRANCH=version-15 \
-  --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
-  --tag=ghcr.io/user/repo/custom:1.0.0 \
-  --file=images/layered/Containerfile .
-```
 
 ### Custom build image
 
