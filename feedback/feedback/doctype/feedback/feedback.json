@@ -1,26 +1,33 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-04-14 12:13:02.548100",
+ "creation": "2025-05-01 15:44:09.551391",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "data"
+  "feedback",
+  "client"
  ],
  "fields": [
   {
-   "fieldname": "data",
-   "fieldtype": "Autocomplete",
-   "label": "data"
+   "fieldname": "feedback",
+   "fieldtype": "Data",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Client"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-14 12:13:13.044314",
+ "modified": "2025-05-01 15:45:54.158054",
  "modified_by": "Administrator",
  "module": "Feedback",
- "name": "TestDoc",
+ "name": "Feedback",
  "owner": "Administrator",
  "permissions": [
   {
